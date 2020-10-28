@@ -201,7 +201,7 @@ end
 
 def big_shoe_rebounds
   big_shoe = get_players.max_by{|player| player[:shoe] }
-
+  return big_shoe[:rebounds]
   binding.pry
 end
 
