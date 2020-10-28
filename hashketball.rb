@@ -200,9 +200,9 @@ end
 
 
 def big_shoe_rebounds
-  get_players.each do |player|
+  get_players.max_by do |player|
+    player[:shoe]
     binding.pry
-    player.max_by {|k| k[:shoe]}
   end
 end
 
